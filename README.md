@@ -17,9 +17,9 @@ prompts are not required here.
 
 ## Installation
 
-Fastest path for any agent: Send this repository link to your agent and ask it to install the skill.
+**Fastest path for any agent**: Send this repository link to your agent and ask it to install the skill.
 
-### Option 1: clone into the Codex skills directory
+### Another option: clone into the Codex skills directory
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
@@ -87,9 +87,9 @@ this README is only for humans browsing the GitHub repo.
 
 ## 安装方式
 
-最快捷的方式：把这个仓库链接发送给你的 agent，让它安装这个 skill。
+**最快捷的方式**：把这个仓库链接发送给你的 agent，让它安装这个 skill。
 
-### 方式一：克隆到 Codex skills 目录
+### 另一个选项：克隆到 Codex skills 目录
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
