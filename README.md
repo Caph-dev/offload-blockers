@@ -17,19 +17,13 @@ prompts are not required here.
 
 ## Installation
 
+Fastest path for any agent: Send this repository link to your agent and ask it to install the skill.
+
 ### Option 1: clone into the Codex skills directory
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 git clone https://github.com/Walaxy/offload-blockers.git "${CODEX_HOME:-$HOME/.codex}/skills/offload-blockers"
-```
-
-### Option 2: copy an existing checkout
-
-If you already have a local copy of this repository, place the folder at:
-
-```bash
-${CODEX_HOME:-$HOME/.codex}/skills/offload-blockers
 ```
 
 After installation, restart Codex or open a new session so the skill is discovered.
@@ -93,19 +87,13 @@ this README is only for humans browsing the GitHub repo.
 
 ## 安装方式
 
+最快捷的方式：把这个仓库链接发送给你的 agent，让它安装这个 skill。
+
 ### 方式一：克隆到 Codex skills 目录
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 git clone https://github.com/Walaxy/offload-blockers.git "${CODEX_HOME:-$HOME/.codex}/skills/offload-blockers"
-```
-
-### 方式二：复制已有仓库副本
-
-如果你已经在本地保存了这个仓库，把目录放到：
-
-```bash
-${CODEX_HOME:-$HOME/.codex}/skills/offload-blockers
 ```
 
 安装后，重启 Codex 或打开一个新会话，让 skill 被重新发现。
