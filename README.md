@@ -19,43 +19,12 @@ prompts are not required here.
 
 **Fastest path for any agent**: Send this repository link to your agent and ask it to install the skill.
 
-### Another option: clone into the Codex skills directory
-
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 git clone https://github.com/Walaxy/offload-blockers.git "${CODEX_HOME:-$HOME/.codex}/skills/offload-blockers"
 ```
 
 After installation, restart Codex or open a new session so the skill is discovered.
-
-## Use with other coding agents
-
-This repository is a Codex skill. Other agents do not load it natively, so use
-the repository as the source of truth and map it to the agent's own instruction
-format.
-
-### Claude Code
-
-Clone or open this repository in your workspace, then ask Claude Code to read
-`SKILL.md`. If you want persistent project instructions, copy the behavior into
-`CLAUDE.md` or a project subagent under `.claude/agents/`.
-
-### Cursor
-
-Clone or open this repository in your workspace, then ask Cursor to read
-`SKILL.md`. Mirror the behavior in `.cursor/rules` or `AGENTS.md`.
-
-### Any other agent
-
-Send this repository link to your agent and ask it to install the skill in its
-own instruction system. If it supports project instructions, copy the decision
-rule, common blockers, delegation protocol, and boundary rules from `SKILL.md`.
-
-### Pi and similar agents
-
-Use the same approach: give the agent this repository link, ask it to read
-`SKILL.md`, and then place the extracted behavior into whatever project-level
-instruction mechanism it supports.
 
 ## Repository structure
 
@@ -89,41 +58,12 @@ this README is only for humans browsing the GitHub repo.
 
 **最快捷的方式**：把这个仓库链接发送给你的 agent，让它安装这个 skill。
 
-### 另一个选项：克隆到 Codex skills 目录
-
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 git clone https://github.com/Walaxy/offload-blockers.git "${CODEX_HOME:-$HOME/.codex}/skills/offload-blockers"
 ```
 
 安装后，重启 Codex 或打开一个新会话，让 skill 被重新发现。
-
-## 与其他 coding agents 配合使用
-
-这个仓库是面向 Codex 的 skill。其他 agent 不能原生加载它，因此请把
-本仓库作为唯一事实来源，再映射到各自的指令系统中。
-
-### Claude Code
-
-先把这个仓库克隆到你的工作区，或者直接让 Claude Code 读取
-`SKILL.md`。如果你希望有持久的项目指令，可以把相关行为复制到
-`CLAUDE.md`，或者放进 `.claude/agents/` 里的项目 subagent。
-
-### Cursor
-
-先把这个仓库克隆到你的工作区，或者直接让 Cursor 读取 `SKILL.md`。
-然后把相同的行为写入 `.cursor/rules` 或 `AGENTS.md`。
-
-### 其他任何 agent
-
-把这个仓库链接发送给你的 agent，让它在自己的指令系统里安装这个 skill。
-如果它支持项目级指令，就把 `SKILL.md` 里的决策规则、常见阻塞项、委派流程
-和边界规则复制过去。
-
-### Pi 和类似的 agent
-
-做法相同：把这个仓库链接发给 agent，让它读取 `SKILL.md`，然后把提炼出的
-行为写入它支持的项目级指令系统。
 
 ## 仓库结构
 
