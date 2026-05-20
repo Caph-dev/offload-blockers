@@ -17,14 +17,35 @@ prompts are not required here.
 
 ## Installation
 
-**Fastest path for any agent**: Send this repository link to your agent and ask it to install the skill.
+### Fastest path for any agent
 
-```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/Walaxy/offload-blockers.git "${CODEX_HOME:-$HOME/.codex}/skills/offload-blockers"
+Send this repository link to your agent and ask it to install the skill:
+
+`https://github.com/Walaxy/offload-blockers`
+
+Tell it to keep the repository available in the workspace, read `SKILL.md`, and wire the skill into its own project-instruction system.
+
+You can also paste this prompt directly into your agent:
+
+```text
+Install the skill from https://github.com/Walaxy/offload-blockers.
 ```
 
-After installation, restart Codex or open a new session so the skill is discovered.
+### Codex
+
+Clone or copy the repository into your Codex skills directory:
+
+```text
+~/.codex/skills/offload-blockers
+```
+
+Example:
+
+```zsh
+git clone https://github.com/Walaxy/offload-blockers ~/.codex/skills/offload-blockers
+```
+
+After installing, restart Codex to pick up the new skill.
 
 ## Repository structure
 
@@ -56,14 +77,35 @@ this README is only for humans browsing the GitHub repo.
 
 ## 安装方式
 
-**最快捷的方式**：把这个仓库链接发送给你的 agent，让它安装这个 skill。
+### 最快捷的方式
 
-```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/Walaxy/offload-blockers.git "${CODEX_HOME:-$HOME/.codex}/skills/offload-blockers"
+把这个仓库链接发送给你的 agent，让它安装这个 skill：
+
+`https://github.com/Walaxy/offload-blockers`
+
+让它保持仓库在工作区中可用，读取 `SKILL.md`，然后将 skill 接入它自己的项目指令系统。
+
+你也可以直接把这段 prompt 粘贴给你的 agent：
+
+```text
+从 https://github.com/Walaxy/offload-blockers 安装 skill。
 ```
 
-安装后，重启 Codex 或打开一个新会话，让 skill 被重新发现。
+### Codex
+
+把仓库克隆或复制到 Codex skills 目录：
+
+```text
+~/.codex/skills/offload-blockers
+```
+
+示例：
+
+```zsh
+git clone https://github.com/Walaxy/offload-blockers ~/.codex/skills/offload-blockers
+```
+
+安装后，重启 Codex 让新 skill 生效。
 
 ## 仓库结构
 
