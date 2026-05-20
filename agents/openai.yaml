@@ -1,0 +1,7 @@
+interface:
+  display_name: "Offload Blockers"
+  short_description: "Delegate setup and tooling blockers to a sub-agent"
+  default_prompt: "Use $offload-blockers to offload environment, dependency, and test setup issues to a sub-agent, and keep the main agent on core code work."
+
+policy:
+  allow_implicit_invocation: true
